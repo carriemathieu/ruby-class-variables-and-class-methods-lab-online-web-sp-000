@@ -34,7 +34,8 @@ class Song
       # if genre exists in list up to this point, add to existing count
       if genre_count[genre] 
         genre_count[genre] += 1 
-      else # genre doesn't exist,
+      # genre doesn't exist,
+      else 
         genre_count[genre] = 1 
       end
     end
