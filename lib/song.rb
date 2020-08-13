@@ -34,6 +34,6 @@ class Song
     #will need to iterate over @@genres & populate hash w/ key/value pairs. check for duplicates, if so, increment value by one, else create new key value/pair
   end
   
-  def artist_count
+  def self.artist_count
   end
 end
