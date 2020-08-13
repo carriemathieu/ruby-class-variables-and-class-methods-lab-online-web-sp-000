@@ -45,12 +45,12 @@ class Song
     artist_count{} # returns hash in which keys are names of each genre 
     @@artists.each do |artist| # iterates through @@artists
     # if genre exists in list up to this point, add to existing count
-    if artist_count[artist] 
-      artist_count[artist] += 1 
-    # genre doesn't exist, create new pair & start with count "1"
-    else 
-      artist_count[artist]  = 1 
-    end
+      if artist_count[artist] 
+        artist_count[artist] += 1 
+      # genre doesn't exist, create new pair & start with count "1"
+      else 
+        artist_count[artist]  = 1 
+      end
   end
 end
 end
