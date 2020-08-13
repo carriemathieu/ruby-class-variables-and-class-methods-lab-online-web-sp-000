@@ -25,7 +25,7 @@ class Song
   end
   
  def genres
-    #Control for duplicates when you code your .genres class method, not when you add genres to the original @@genres array. We will want to know how many songs of each genre have been created.
+    @@genres.uniq
   end
   
   def genre_count
