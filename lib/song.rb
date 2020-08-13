@@ -29,6 +29,7 @@ class Song
   end
   
   def self.genre_count
+    genre_count{}
     #returns hash in which keys are names of each genre 
     #each genre name key should point to value that is the # of songs for that genre
     #will need to iterate over @@genres & populate hash w/ key/value pairs. check for duplicates, if so, increment value by one, else create new key value/pair
