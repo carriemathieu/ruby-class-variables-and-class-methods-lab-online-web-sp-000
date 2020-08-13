@@ -21,7 +21,7 @@ class Song
   end
   
   def artists
-   #ontrol for duplicates when you code your .artists class method, not when you add artists to the original @@artists array. We will want to know how many songs each have been assigned to each artist.
+   @@artists.uniq
   end
   
  def genre
