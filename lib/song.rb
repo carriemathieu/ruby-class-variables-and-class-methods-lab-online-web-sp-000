@@ -46,10 +46,10 @@ class Song
     @@artists.each do |artist| # iterates through @@artists
     # if genre exists in list up to this point, add to existing count
     if artist_count[artist] 
-      genre_count[genre] += 1 
+      artist_count[artist] += 1 
     # genre doesn't exist, create new pair & start with count "1"
     else 
-      genre_count[genre] = 1 
+      artist_count[artist]  = 1 
     end
   end
 end
