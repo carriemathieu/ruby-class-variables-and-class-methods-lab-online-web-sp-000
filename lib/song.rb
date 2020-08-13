@@ -29,7 +29,7 @@ class Song
   end
   
   def self.genre_count
-    genre_count{} #returns hash in which keys are names of each genre 
+    genre_count{} # returns hash in which keys are names of each genre 
     @@genres.each do |genre|
       if genre_count[genre]
         genre_count[genre] += 1 
