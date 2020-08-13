@@ -31,9 +31,10 @@ class Song
   def self.genre_count
     genre_count{} # returns hash in which keys are names of each genre 
     @@genres.each do |genre| # iterates through @@genres
-      if genre_count[genre] # if genre exists in list up to this point, add to existing count
+      # if genre exists in list up to this point, add to existing count
+      if genre_count[genre] 
         genre_count[genre] += 1 
-      else
+      else # genre doesn't exist,
         genre_count[genre] = 1 
       end
     end
