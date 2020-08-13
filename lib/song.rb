@@ -43,7 +43,7 @@ class Song
   
   def self.artist_count
       artist_count{} # returns hash in which keys are names of each genre 
-    @@genres.each do |genre| # iterates through @@genres
+    @@artists.each do |genre| # iterates through @@genres
       # if genre exists in list up to this point, add to existing count
       if genre_count[genre] 
         genre_count[genre] += 1 
